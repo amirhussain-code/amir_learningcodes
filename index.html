@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <style>
+        .header {
+            background-color: rgb(6, 66, 116);
+            display: flex;
+            padding: 0 160px;
+            line-height: 40px;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .footer{
+            background-color:rgb(6, 66, 116) ;
+            display: flex;
+            height: 40px;
+            align-items: center;
+            justify-content: center;
+            color: white;
+         
+
+        }
+
+        button {
+            padding: 8px 14px;
+            border: none;
+            border-radius: 30px;
+            display: flex;
+            background-color: rgb(3, 128, 245);
+        }
+
+        button:hover {
+            color: white;
+            background-color: tomato;
+        }
+
+        .signup ul {
+            list-style: none;
+            gap: 20px;
+            color: white;
+            display: flex;
+            align-items: center;
+
+        }
+
+        .nav ul li:hover {
+            color: tomato;
+        }
+
+        .nav ul a,
+        .signup li a:hover {
+            color: tomato;
+
+        }
+
+        .nav ul a,
+        .signup li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .signup li {
+            gap: 2px;
+            text-decoration: none;
+            color: white;
+        }
+        .nav ul {
+            list-style: none;
+            gap: 40px;
+            display: flex;
+            color: white;
+
+
+        }
+        .nav{
+            position: relative;
+        }
+        .nav .dropdown{
+            display: none;
+        }
+
+        .nav ul a li:hover .dropdown {
+            background-color:rgb(3, 128, 245);
+            color: white;
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            z-index: 1px;
+            top: 50px;
+            padding:0 20px;
+            gap: 0;
+            border-radius: 8px;
+        }
+
+        .imagesection {
+            border: 1px solid rgb(6, 66, 116);
+            height: 75vh;
+            background-image: url(background.jpg);
+        }
+        .qacces{
+              border: 1px solid rgb(6, 66, 116);
+              list-style: none;
+              align-items: center;
+        }
+        .qacces ul{
+            display: flex;
+            list-style: none;
+            text-decoration: none;
+            gap: 20px;
+            justify-content: center;
+        }
+        .qacces ul li a{
+            text-decoration: none;
+        }
+        #search{
+            width: 250px;
+    
+        }
+        .text{
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            float: right;
+            padding-right: 250px;
+            padding-top: 160px;
+
+        }
+        #search{
+            border-radius: 20px;
+            border: 1px solid rgb(3, 128, 245);
+            padding-left: 20px;
+        }
+
+        </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="nav">
+            <ul>
+                <img src="logo.jpg" alt="LOGO" width="100px" height="40px">
+                <a href="#">
+                    <li class="home">Home
+                        <ul class="dropdown">
+                            <li>Home 1</li>
+                            <li>Home 2</li>
+                            <li>Home 3</li>
+                            <li>Home 4</li>
+                            <li>Home 5</li>
+                        </ul>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>Property
+                          <ul class="dropdown">
+                            <li>property 1</li>
+                            <li>property 2</li>
+                            <li>property 3</li>
+                            <li>property 4</li>
+                        </ul>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>About
+                        <ul class="dropdown">
+                            <li>About 1</li>
+                            <li>About 2</li>
+                            <li>About 3</li>
+                        </ul>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>Contact
+                        <ul class="dropdown">
+                            <li>Contact 1</li>
+                            <li>Contact 2</li>
+                        </ul>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>Blog
+                        <ul class="dropdown">
+                            <li>Blog1</li>
+                            <li>Blog2</li>
+                            <li>Blog3</li>
+                        </ul>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div class="signup">
+            <ul>
+                <li>Call Us:<a href="#">+10 (10) 123456789</a></li>
+                <li><a href="#"><button>SIGN UP</button></a></li>
+            </ul>
+        </div>
+    </div>
+    <section class="qacces">
+        <ul>
+
+            <input type="text" name="search" id="search" placeholder="Search" >
+        <li><a href="#"><button type="submit">Search</button></a></li>
+        <li><a href="#"><button>Rent</button></a></li>
+        <li><a href="#"><button>Bed</button></a></li>
+        <li><a href="#"><button>Both</button></a></li>
+        </ul>
+    </section>
+    <section class="imagesection">
+        <div class="text">
+        <P>3 Bed. 2 Bath. 2200 sqft</P>
+        <h1>Small House GB</h1>
+        <p>Get start for booking from our pagr pre built page <br> to show you our services.</p>
+        <h4>$ 3,000</h4>
+        <button>View Rooms</button>
+        </div>
+    </section>
+        <footer class="footer">
+          <h5>  All rights Reserdved by ABC Tech | @ Copyright 2023</h5>
+        </footer>
+
+</body>
+
+</html>
